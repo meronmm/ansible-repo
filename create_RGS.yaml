@@ -1,17 +1,13 @@
 ---
 - hosts: all
   connection: local
-  vars:
-   resource_group: name
-   location: northeurope
-   azure_subscription_id: "{{ lookup('env','AZURE_SUBSCRIPTION_ID') }}"
+   azure_subscription_id: "40a25577-60ff-462c-8ff2-a386981b8262"
   tasks:
     - name: Create resource group
       azure_rm_resourcegroup:
-        name: name
-        location: location
+        name: meronmm
+        location: northeurope
       register: rg
     - debug:
         var: rg
-        var: name
-        var: location
+        
