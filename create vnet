@@ -1,3 +1,5 @@
+---
+
 - name: Create a virtual network
   azure_rm_virtualnetwork:
     resource_group: myResourceGroup
