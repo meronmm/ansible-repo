@@ -1,7 +1,6 @@
 ---
 - hosts: localhost
   connection: local
-   azure_subscription_id: "40a25577-60ff-462c-8ff2-a386981b8262"
   tasks:
     - name: Create resource group
       azure_rm_resourcegroup:
