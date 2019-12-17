@@ -1,6 +1,8 @@
 ---
-- hosts: localhost
-  connection: local
+- name: Install Package
+  hosts: all
+  vars: 
+    package: from_playbook
   tasks:
     - name: Create resource group
       azure_rm_resourcegroup:
@@ -9,4 +11,6 @@
       register: rg
     - debug:
         var: rg
+        
+
         
