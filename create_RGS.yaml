@@ -6,7 +6,7 @@
   tasks:
     - name: Create resource group
       azure_rm_resourcegroup:
-        name: meronmm
+        name: ohad-test-rg-01
         location: northeurope
       register: rg
     - debug:
